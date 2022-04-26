@@ -1,0 +1,13 @@
+name = "Hipposeg"
+uuid = "7d6bc079-5f92-40e1-bec8-1a7ab8344031"
+authors = ["Saikhu <asimsaikhu@gmail.com> and contributors"]
+version = "0.0.1"
+
+[compat]
+julia = "1.7.2"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
