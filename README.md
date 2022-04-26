@@ -1,5 +1,6 @@
 # Hipposeg.jl
-MRI Image analysis
+Julia wrapper for Python Hippocampus segmentation from the Brain Megnetic Resonance Images.
+
 
 
 # Hipposeg
