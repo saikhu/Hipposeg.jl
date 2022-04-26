@@ -1,2 +1,2 @@
 # Hipposeg.jl
-MRI
+MRI Image analysis
