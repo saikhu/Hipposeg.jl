@@ -11,7 +11,7 @@ RUN apt-get update; apt-get install -yq curl; apt-get install -yq git; apt-get -
 
 RUN git clone https://github.com/saikhu/Hipposeg.jl.git
 
-RUN cd ./hippocampus.jl/
+RUN cd ./Hipposeg.jl/
 
 VOLUME [ "/data" ]
 
