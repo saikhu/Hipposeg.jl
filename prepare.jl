@@ -1,3 +1,5 @@
+#!/usr/bin/julia
+
 using Pkg
-Pkg.activate .
+Pkg.activate() /workspace/Hipposeg.jl/
 Pkg.precompile()
