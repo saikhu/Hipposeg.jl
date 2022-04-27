@@ -10,7 +10,9 @@ function moto(check::Bool)
     else
         return false
     end
-
+end
+function readImage()
     
 end
+    
 end
