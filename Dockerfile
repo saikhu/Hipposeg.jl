@@ -3,7 +3,7 @@ FROM julia:bullseye
 LABEL version="1.0"
 LABEL location="Busan" type="Julia Hippocampus" Author="Asim Usman" email="asimsaikhu@gmail.com"
 ENV TARGET_DIR /workspace
-# COPY ./ $TARGET_DIR
+#1 COPY ./ $TARGET_DIR
 
 WORKDIR $TARGET_DIR
 
