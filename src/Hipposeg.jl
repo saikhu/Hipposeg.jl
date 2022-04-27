@@ -5,7 +5,7 @@ export moto
 function moto(check::Bool)
     moto_message = "We are building something cool here ! 🥀  "
     if check == true
-        print(moto_message)
+        println(moto_message)
         return true
     else
         return false
