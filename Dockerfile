@@ -7,7 +7,7 @@ ENV TARGET_DIR /workspace
 
 WORKDIR $TARGET_DIR
 
-RUN apt-get update; apt-get install -yq curl; apt-get install -yq git; apt-get install vim
+RUN apt-get update; apt-get install -yq curl; apt-get install -yq git; apt-get -yq install vim
 
 RUN git clone https://github.com/saikhu/Hipposeg.jl.git
 
