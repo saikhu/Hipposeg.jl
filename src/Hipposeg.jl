@@ -1,6 +1,6 @@
 # using EmojiSymbols
 module Hipposeg
-
+export moto
 # Write your package code here.
 function moto(check::Bool)
     moto_message = "We are building something cool here ! 🥀  "
@@ -12,7 +12,7 @@ function moto(check::Bool)
     end
 end
 function readImage()
-    
+    print("Read Image Package")
 end
     
 end
