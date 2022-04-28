@@ -1,6 +1,7 @@
 # using EmojiSymbols
 module Hipposeg
 using PyCall
+np = pyimport("numpy")
 # export moto pythonExecTest 
 # Write your package code here.
 function moto(check::Bool)
@@ -16,9 +17,12 @@ end
 
 
 function pythonExecTest(x)
-    # x = 100
+    # x = np.array(x)
+    # y = x.tolist()
+    # print()
     py"""
     def testPy(x):
+        import numpy
         re = "The argument is: " + str(x)
         return re
     """
