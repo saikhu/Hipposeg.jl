@@ -7,12 +7,13 @@ ENV TARGET_DIR /workspace
 
 WORKDIR $TARGET_DIR
 
-RUN apt-get update; apt-get install -yq curl; apt-get install -yq git; apt-get -yq install vim
+RUN apt-get update; apt-get install -yq curl; apt-get install -yq git; apt-get -yq install vim; apt install 
+RUN apt-get install software-properties-common
 
 RUN git clone https://github.com/saikhu/Hipposeg.jl.git
 
-RUN cd ./Hipposeg.jl/
+WORKDIR $TARGET_DIR/Hipposeg.jl/
 
-VOLUME [ "/data" ]
+# VOLUME [ "/data" ]
 
 CMD [ "/bin/bash" ]
