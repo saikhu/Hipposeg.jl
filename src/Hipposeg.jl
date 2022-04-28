@@ -1,6 +1,7 @@
 # using EmojiSymbols
 module Hipposeg
-export moto
+using PyCall
+# export moto pythonExecTest 
 # Write your package code here.
 function moto(check::Bool)
     moto_message = "We are building something cool here ! 🥀  "
@@ -11,8 +12,18 @@ function moto(check::Bool)
         return false
     end
 end
-function readImage()
-    print("Read Image Package")
+
+
+
+function pythonExecTest(x)
+    # x = 100
+    py"""
+    def testPy(x):
+        re = "The argument is: " + str(x)
+        return re
+    """
+    
+    return py"testPy"(x)
 end
     
 end
