@@ -1,6 +1,7 @@
 # Hipposeg.jl
 Julia wrapper for Python Hippocampus segmentation from the Brain Megnetic Resonance Images.
 
+## _This package is under deveolpment_ 
 
 
 # Hipposeg
